@@ -2,10 +2,10 @@ fig, ax = plt.subplots()
 font_family = 'Times New Roman'
 title_font_size=17
 label_font_size=15
-legend_tick_font_size=11
+legend_tick_font_size=12
 ax.scatter(qpppred, qppdata,marker='s')
 ax.scatter(qpppred_val, qppdata_val)
-plt.title('Measured versus predicted heat flux', fontsize=title_font_size, fontfamily=font_family)
+plt.title('Measured versus predicted heat flux (guess 1)', fontsize=title_font_size, fontfamily=font_family)
 plt.xlabel('Predicted heat flux [W/cm^2]', fontsize=label_font_size, fontfamily=font_family)
 plt.ylabel('Measured heat flux [W/cm^2]', fontsize=label_font_size, fontfamily=font_family)
 plt.legend(['training data', 'validation data'], fontsize=legend_tick_font_size)
